@@ -371,12 +371,14 @@ namespace Xamarin.Controls
 			Caption.Frame = new CGRect (Padding.Left, currentY, w - Padding.Left - Padding.Right, captionHeight);
 
 			currentY = currentY - SignatureLine.LayoutMargins.Bottom - SignatureLine.Frame.Height;
-			SignatureLine.Frame = new CGRect (Padding.Left, currentY, w - Padding.Left - Padding.Right, SignatureLine.Frame.Height);
+			SignatureLine.Frame = new CGRect (10, 6, 5, Frame.Height - Padding.Left);
 
 			currentY = currentY - SignatureLine.LayoutMargins.Top - SignaturePrompt.Frame.Height;
 			SignaturePrompt.Frame = new CGRect (Padding.Left, currentY, SignaturePrompt.Frame.Width, SignaturePrompt.Frame.Height);
-
+			SignaturePrompt.RemoveFromSuperview ();
+			Caption.RemoveFromSuperview();
 			ClearLabel.Frame = new CGRect (w - Padding.Right - ClearLabel.Frame.Width, Padding.Top, ClearLabel.Frame.Width, clearButtonHeight);
 		}
 	}
 }
+

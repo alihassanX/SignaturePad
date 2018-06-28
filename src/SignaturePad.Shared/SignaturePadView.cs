@@ -34,9 +34,9 @@ namespace Xamarin.Controls
 		private const float DefaultNarrowSpacing = 3.0f;
 		private const float DefaultLineThickness = 1.0f;
 
-		private const float DefaultFontSize = 15.0f;
+		private const float DefaultFontSize = 25.0f;
 
-		private const string DefaultClearLabelText = "clear";
+		private const string DefaultClearLabelText = "X";
 		private const string DefaultPromptText = "▶";
 		private const string DefaultCaptionText = "sign above the line";
 
